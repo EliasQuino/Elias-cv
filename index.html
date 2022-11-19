@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ing. Elias Quino</title>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/experiences.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script defer src="./app.js"></script>
+
+</head>
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img 
+                    width="50" 
+                    height="50" 
+                    src="img/igris.png" 
+                    alt="Programador"
+                    />
+                    <div class="logotype">
+                        Elias Quino<br>
+                        ++Igris++
+                    </div>
+            </a>
+            <button class="open-menu" aria-label="abrir menu">
+                <img src="img/menu-hamburguesa.svg" alt="abrir menu" height="30px" width="30px">
+            </button>
+
+            <ul class="menu">
+                <button class="close-menu" aria-label="cerrar menu">
+                    <img src="img/cruz.svg" alt="cerrar menu" height="30px" width="30px">
+                </button>
+                <li><a href="#profile" class="selected">Perfil</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="profile" id="profile">
+            <div class="profile-info">
+                <h1 class="profile-tittle">Hola, soy <br/> Elias Emanuel Quino Huallpa</h1>
+                <p class="profile-details">
+                    Soy un apasionado por el desarrollo de software tengo
+                    medio año de Experiencia, con una hambre de sobre pasar
+                    mi capacidad en el area de trabajo
+                </p>
+                <button class="profile-btn">Descargar cv
+                </button>
+            </div>
+            <span class="profile-img-section">
+                <img class="profile-img" src="img/igrisperfil.png" alt="perfil de github"/>
+                <div class="profile-img-line"></div>
+            </span>
+        </section>
+    </div>
+
+    <section class="experiences" id="experience">
+        <img src="img/wave.svg" alt="division" class="wave"/>
+        <div class="experiences-body">
+            <h2 class="experiences-tittle">Experiencia</h2>
+            <div class="experiences-grid">
+
+                <div class="empty"></div>
+                <div class="line"></div>
+
+                <div class="experience">
+                    <div class="experience-date">2022-2022</div>
+                    <div class="experience-company">Innovacion virtual launch</div>
+                    <div class="experience-position">Junior</div>
+                    <div class="experience-description">
+                        Desarrollo de la interfaz y el back-end
+                    </div>
+                </div>
+
+                <div class="experience experience_left">
+                    <div class="experience-date">2022-2022</div>
+                    <div class="experience-company">Innovacion virtual launch</div>
+                    <div class="experience-position">Junior</div>
+                    <div class="experience-description">
+                        Desarrollo de la interfaz y el back-end
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="line"></div>
+
+                <div class="experience">
+                    <div class="experience-date">2022-2022</div>
+                    <div class="experience-company">Innovacion virtual launch</div>
+                    <div class="experience-position">Junior</div>
+                    <div class="experience-description">
+                        Desarrollo de la interfaz y el back-end
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/wave.svg" alt="division" class="wave wave_bottom"/>
+
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="skills" id="skills">
+            <h2 class="skills-tittle">Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">CSS</li>
+                <li class="skills-skill">HTML</li>
+                <li class="skills-skill">Node.js</li>
+                <li class="skills-skill">React.js</li>
+                <li class="skills-skill">TypeScript</li>
+                <li class="skills-skill">JavaScript</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="contact" id="contact">
+            <h2 class="contact-tittle">Contacto</h2>
+            <div class="contact-details">
+                <div class="contact-details-group">
+                    <p class="contact-label">Dirección:</p>
+                    <p class="contact-text">Santa Cruz - Bolivia</p>
+                </div>
+                <div class="contact-details-group">
+                    <p class="contact-label">Email:</p>
+                    <p class="contact-text">elias12.emanuelll@gmail.com</p>
+                </div>
+                <div class="contact-details-group">
+                    <p class="contact-text">Envie su mensaje con gusto lo atendere</p>
+                </div>
+            </div>
+            <form action="" class="contact-form">
+                <div class="contact-form-group">
+                    <label for="name">Nombre</label>
+                    <input required type="text" name="name" id="name"/>
+                </div>
+                <div class="contact-form-group">
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" id="email"/>
+                </div>
+                <div class="contact-form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea required name="message" id="message" rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="contact-form-submit">Enviar</button>
+            </form>
+
+            <nav class="social">
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <img src="img/icons8-github.svg" alt="git hub profile"/>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <img src="img/icons8-facebook.svg" alt="facebook profile"/>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <img src="img/icons8-tiktok.svg" alt="tick tock profile"/>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <img src="img/icons8-linkedin.svg" alt="linkedin profile"/>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+    </div>
+    
+</body>
+</html>
